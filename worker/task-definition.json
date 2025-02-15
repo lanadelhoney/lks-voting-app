@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:645693533396:task-definition/lks-td-worker:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:113922591568:task-definition/lks-td-worker:1",
     "containerDefinitions": [
         {
-            "name": "lks-worker-container",
-            "image": "645693533396.dkr.ecr.us-east-1.amazonaws.com/lks-voting-image:Worker-dev-10",
+            "name": "lks-td-worker",
+            "image": "113922591568.dkr.ecr.us-east-1.amazonaws.com/lks-voting-image",
             "cpu": 0,
             "portMappings": [],
             "essential": true,
@@ -28,8 +28,8 @@
         }
     ],
     "family": "lks-td-worker",
-    "taskRoleArn": "arn:aws:iam::645693533396:role/LabRole",
-    "executionRoleArn": "arn:aws:iam::645693533396:role/LabRole",
+    "taskRoleArn": "arn:aws:iam::113922591568:role/LabRole",
+    "executionRoleArn": "arn:aws:iam::113922591568:role/LabRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -80,8 +80,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-02-05T07:32:25.029Z",
-    "registeredBy": "arn:aws:sts::645693533396:assumed-role/voclabs/user3813061=_Student_View__Mahitasotthi_Sacca_Devandra",
+    "registeredAt": "2025-02-15T05:55:51.769Z",
+    "registeredBy": "arn:aws:sts::113922591568:assumed-role/voclabs/user3842243=110113-5",
     "enableFaultInjection": false,
     "tags": []
 }
