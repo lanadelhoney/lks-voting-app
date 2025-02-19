@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:113922591568:task-definition/lks-td-vote:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:021691354451:task-definition/lks-td-vote:1",
     "containerDefinitions": [
         {
             "name": "lks-vote-container",
-            "image": "113922591568.dkr.ecr.us-east-1.amazonaws.com/lks-voting-image",
+            "image": "021691354451.dkr.ecr.us-east-1.amazonaws.com/lks-voting-image:vote-prod-latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "lks-vote-container",
+                    "name": "lks-vote-container-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -36,8 +36,8 @@
         }
     ],
     "family": "lks-td-vote",
-    "taskRoleArn": "arn:aws:iam::113922591568:role/LabRole",
-    "executionRoleArn": "arn:aws:iam::113922591568:role/LabRole",
+    "taskRoleArn": "arn:aws:iam::021691354451:role/LabRole",
+    "executionRoleArn": "arn:aws:iam::021691354451:role/LabRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -88,7 +88,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-02-15T05:51:26.312Z",
-    "registeredBy": "arn:aws:sts::113922591568:assumed-role/voclabs/user3842243=110113-5",
+    "registeredAt": "2025-02-19T01:27:14.946Z",
+    "registeredBy": "arn:aws:sts::021691354451:assumed-role/voclabs/user3851965=103064-12",
     "tags": []
 }
